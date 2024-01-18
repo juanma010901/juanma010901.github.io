@@ -6,7 +6,7 @@ fetch("https://api.github.com/users/juanma010901/repos")
     // Ordena la lista de repositorios por fecha de actualización para que los más recientes aparezcan primero
     data.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
     // Filtra la lista para obtener solo los últimos 4 repositorios
-    const ultimosRepos = data.slice(0, 6);
+    const ultimosRepos = data.slice(0, 8);
     // Por cada repositorio en la lista, crea una tarjeta HTML para mostrar la información que deseas mostrar
     const repositoriosContainer = document.querySelector(".repositorios-container");
 
